@@ -1,0 +1,397 @@
+html, main {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.signup-page {
+  display: flex;
+  flex-direction: column; /* Pour empiler le header, le contenu, et le footer */
+  min-height: 100vh; /* Assure que la page occupe au moins la hauteur de la fenêtre */
+  background-color: #FFDAE4;
+}
+
+.main-header {
+  width: 100%;
+  height: 133px;
+  background-color: #1A0007;
+  border-radius: 0px 0px 30px 30px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1; /* Assure que le header est au-dessus du contenu */
+}
+
+.logo-box {
+  width: 99px;
+  height: 99px;
+  background-color: #B50938;
+  position: absolute;
+  top: 20px;
+  left: 138px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+}
+
+.logo-text {
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+.connexion-button {
+  width: 216px;
+  height: 58px;
+  position: absolute;
+  top: 41px;
+  right: 20px;
+  background-color: #B20937;
+  color: white;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.deconnexion-button {
+  width: 216px;
+  height: 58px;
+  position: absolute;
+  top: 41px;
+  right: 20px;
+  background-color:  white;
+  color:#B20937;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  flex: 1; /* Prend tout l'espace restant entre le header et le footer */
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+/* Debut partie formulaire */
+.group-64 {
+  width: 709px;
+  height: 923px; /* Ajuste la hauteur pour ne pas dépasser la hauteur totale de la page */
+  background-color: #1A0007;
+  border-radius: 0px 30px 30px 0px;
+  margin: 20px 0; /* Ajuste les marges verticales */
+  position: relative; /* Positionnement relatif pour éviter les débordements */
+  left: 0; /* Aligne le groupe à l'extrême gauche */
+  /* Retire margin-left auto pour qu'il ne soit plus centré horizontalement */
+}
+
+.rectangle-112 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex; /* Utilisation de flexbox pour centrer l'image */
+  align-items: center; /* Centre l'image verticalement */
+  justify-content: center; /* Centre l'image horizontalement */
+  overflow: hidden; /* Assure que l'image ne dépasse pas les limites du conteneur */
+}
+
+.rectangle-image {
+  max-width: 90%; /* Ajuste la largeur maximale de l'image à 80% du conteneur */
+  max-height: 90%; /* Ajuste la hauteur maximale de l'image à 80% du conteneur */
+  object-fit: contain; /* Maintient l'image entière tout en respectant ses proportions */
+}
+
+
+.group-63 {
+  width: 466px;
+  height: 831px;
+  position: relative;
+  top: 140px;
+  left: 340px;
+  background-color: #FFDAE4;
+}
+
+.logo-boxe {
+width: 99px;
+height: 99px;
+background-color: #B50938;
+position: absolute;
+top: -90px;
+left: 178px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 0px;
+margin-bottom: 20px;
+}
+
+.logo-texte {
+color: #FFFFFF;
+font-size: 12px;
+}
+
+/* Texte Créer un compte */
+.create-account {
+left: 2095px; /* Ajusté pour pousser à droite */
+padding: 20px;
+font-size: 24px;
+font-weight: 700;
+text-align: center;
+opacity: 1; /* Assurez-vous qu'il soit visible */
+}
+
+
+
+.inputs-container {
+  padding: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.btn-primary {
+  width: 464px;
+  height: 44px;
+  background-color: #B20937;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding: 10px 0;
+}
+
+.group-59 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+.line {
+  width: 175.94px;
+  height: 1px;
+  background-color: #F1B5C5;
+}
+
+.or-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+.group-60 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.already-account {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+
+/* Bouton Connexion */
+.btn-connexion {
+width: 107px;
+height: 44px;
+color: #B20937; /* Couleur du texte */
+background-color: transparent; /* Aucune couleur de fond */
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+border: none; /* Aucun bord */
+cursor: pointer;
+padding: 10px 0;
+text-align: center;
+}
+
+.btn-renitialiser{
+  width: 107px;
+  height: 44px;
+  color: #B20937; /* Couleur du texte */
+  background-color: transparent; /* Aucune couleur de fond */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  border: none; /* Aucun bord */
+  cursor: pointer;
+  padding: 10px 0;
+  text-align: center;
+
+}
+
+/* Conteneur pour "Se souvenir de moi" */
+.remember-me-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.remember-me-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.remember-me-checkbox {
+  margin-right: 10px; /* Espacement entre la case à cocher et le texte */
+}
+
+/* Fin partie formulaire */
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  align-items: center;
+}
+
+
+.main-footer {
+  width: 100%;
+  height: 96px;
+  background-color: #1A0007;
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF2F5;
+  position: relative;
+  z-index: 1; /* Assure que le footer est au-dessus du contenu */
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo-img {
+  width: 38px;
+  height: 38px;
+  border: 3px solid #FFF2F5;
+}
+
+.footer-text {
+  margin-left: 10px;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.social-icon {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+}
+
+.header-menu {
+  display: flex; /* Organise les boutons de manière horizontale */
+  align-items: center; /* Centre verticalement les boutons */
+  margin-left: 1000px;
+}
+
+.header-menu .menu-item {
+  background-color: transparent; /* Assurez-vous que le fond est transparent */
+  border: none;
+  margin-left: 40px; /* Utilise un espacement raisonnable entre les boutons */
+  color: #FFF;
+  cursor: pointer;
+}
+.header-menu .menu-item:hover {
+  text-decoration: underline; /* Ajoute le soulignement lors du survol */
+}
+
+.recherche-page {
+  padding: 20px;
+}
+
+.search-bar {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  width: 300px;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.artwork-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.artwork-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.artwork-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.artwork-title {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.artwork-artist {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+@media (min-width: 1200px) {
+  .artwork-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px;
+  color: #888;
+}
+
+.input-wrapper input {
+  padding-left: 30px; /* Ajustez en fonction de la taille de l'icône */
+}
+
